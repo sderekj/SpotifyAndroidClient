@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void getPerson(String id) {
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://10.0.2.2:4567/") // "http://10.0.2.2:8080/" or try "http://127.0.0.1:8080/" or "http://192.168.1.136:8080/" or "http://164.92.124.42:8080/"
+                .baseUrl("https://spotify-heroku-project.herokuapp.com/") // "http://10.0.2.2:8080/" or try "http://127.0.0.1:8080/" or "http://192.168.1.136:8080/" or "http://164.92.124.42:8080/"
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
@@ -138,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void getPeople() {
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://10.0.2.2:4567/") // "http://10.0.2.2:8080/" or try "http://127.0.0.1:8080/" or "http://192.168.1.136:8080/" or "http://164.92.124.42:8080/"
+                .baseUrl("https://spotify-heroku-project.herokuapp.com/") // "http://10.0.2.2:8080/" or try "http://127.0.0.1:8080/" or "http://192.168.1.136:8080/" or "http://164.92.124.42:8080/"
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
@@ -169,7 +169,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void putPerson() {
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://10.0.2.2:4567/") // "http://10.0.2.2:8080/" or try "http://127.0.0.1:8080/" or "http://192.168.1.136:8080/" or "http://164.92.124.42:8080/"
+                .baseUrl("https://spotify-heroku-project.herokuapp.com/") // "http://10.0.2.2:8080/" or try "http://127.0.0.1:8080/" or "http://192.168.1.136:8080/" or "http://164.92.124.42:8080/"
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
@@ -183,9 +183,9 @@ public class MainActivity extends AppCompatActivity {
         call.enqueue(new Callback<Person>() {
             @Override
             public void onResponse(Call<Person> call, Response<Person> response) {
-                Person person = response.body();
-                personNameTv.setText(person.getName());
-                personFavoriteCityTv.setText(person.getFavoriteCity());
+//                Person person = response.body();
+//                personNameTv.setText(person.getName());
+//                personFavoriteCityTv.setText(person.getFavoriteCity());
             }
 
             @Override
@@ -197,7 +197,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void postPerson(String name, String favCity) {
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://10.0.2.2:4567/") // "http://10.0.2.2:8080/" or try "http://127.0.0.1:8080/" or "http://192.168.1.136:8080/" or "http://164.92.124.42:8080/"
+                .baseUrl("https://spotify-heroku-project.herokuapp.com/") // "http://10.0.2.2:8080/" or try "http://127.0.0.1:8080/" or "http://192.168.1.136:8080/" or "http://164.92.124.42:8080/"
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
