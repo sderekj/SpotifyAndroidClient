@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/person_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Person's Id"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/person_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Person's Name"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/person_favoritecity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Person's Favorite City"
+        android:textSize="16sp" />
+    <!--
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="20dp" />
+
+        <EditText
+            android:id="@+id/person_name_edittext"
+            android:hint="Enter Person Name"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+        <EditText
+            android:id="@+id/person_favoritecity_edittext"
+            android:hint="Enter Favorite City"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="20dp" />
+
+        <EditText
+            android:id="@+id/person_id_edittext"
+            android:hint="Enter ID"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/create_person_btn"
+            android:text="Create new person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            -->
+
+    <Button
+        android:id="@+id/getpeople"
+        android:text="Get People"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/posttopeople"
+        android:text="Post to People"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/getpreviousperson"
+        android:text="Get Previous Object"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/puttopeople"
+        android:text="Put Request to People and Modify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/getspecificperson"
+        android:text="Get Request to People/1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/deleteperson"
+        android:text="Delete Request to People/1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/getpeople2"
+        android:text="Get People (Again)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
