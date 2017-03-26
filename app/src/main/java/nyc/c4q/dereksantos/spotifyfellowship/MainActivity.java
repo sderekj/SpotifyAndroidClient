@@ -149,11 +149,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<List<Person>> call, Response<List<Person>> response) {
                 List<Person> personList = response.body();
-                Person person = personList.get(0);
 
-                personIdTv.setText(person.getId());
-                personNameTv.setText(person.getName());
-                personFavoriteCityTv.setText(person.getFavoriteCity());
+                if (personList.size() > 0 ) {
+                    Person person = personList.get(0);
+                    personIdTv.setText(person.getId());
+                    personNameTv.setText(person.getName());
+                    personFavoriteCityTv.setText(person.getFavoriteCity());
+                } else {
+
+                }
             }
 
             @Override
